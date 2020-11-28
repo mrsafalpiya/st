@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=15:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -176,7 +176,7 @@ static MouseShortcut mshortcuts[] = {
 	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 3},      0, /* !alt */ -1 },
 	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 3},      0, /* !alt */ -1 },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
+	{ ShiftMask,            Button4, ttysend,        {.s = "\034[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
@@ -200,8 +200,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i =  3} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i =  3} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i =  5} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i =  5} },
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 };
 
