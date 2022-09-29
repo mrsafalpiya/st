@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Terminus:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Inconsolata-g:pixelsize=12:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -218,6 +218,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ MODKEY,               XK_c,           normalMode,     {.i =  0} },
+	{ TERMMOD,              XK_X,           invert,         { }       },
 };
 
 /*
