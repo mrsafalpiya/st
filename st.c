@@ -114,6 +114,7 @@ typedef struct {
 	int alt;
 } Selection;
 
+
 /* Screen lines */
 typedef struct {
 	Line* buffer;  /* ring buffer */
