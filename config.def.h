@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Comic Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "SFMono Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
 static char *font2[] = {
-	"Noto Color Emoji:pixelsize=14:antialias=true:autohint=true",
+	"Noto Color Emoji:pixelsize=16:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
@@ -99,29 +99,30 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#000000",
-	"#cc6666",
-	"#b5bd68",
-	"#f0c674",
-	"#81a2be",
-	"#b294bb",
-	"#8abeb7",
-	"#ffffff",
+	"#282C34",
+	"red3",
+	"green3",
+	"yellow3",
+	"cyan",
+	"magenta3",
+	"cyan3",
+	"gray90",
 
 	/* 8 bright colors */
-	"#666666",
-	"#d54e53",
-	"#b9ca4a",
-	"#e7c547",
-	"#7aa6da",
-	"#c397d8",
-	"#70c0b1",
-	"#eaeaea",
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#61AFEF",
+	"magenta",
+	"cyan",
+	"white",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#ff00ff",
+	"#cccccc",
+	"#555555",
 	"#ff00ff",
 };
 
@@ -132,7 +133,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-unsigned int defaultcs = 256;
+unsigned int defaultcs = 258;
 unsigned int defaultrcs = 257;
 
 /*
