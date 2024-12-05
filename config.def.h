@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monaco Nerd Font Mono:pixelsize=22:antialias=true:autohint=true";
+static char *font = "Source Code Pro:pixelsize=22:antialias=true:autohint=true";
 static char *font2[] = {
-	"Noto Color Emoji:pixelsize=22:antialias=true:autohint=true",
+	"Noto Color Emoji:pixelsize=20:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
